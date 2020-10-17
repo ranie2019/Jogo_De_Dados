@@ -32,16 +32,16 @@ elif jogo == 1:
             print('Opção Invalida')
 
         elif dado == numero:
-            dinheiro += + aposta
+            soma = dinheiro + aposta
             print('')
             print(f'Voce Escolheu {numero} e o Dado Deu {dado} '
-                  f'\nVoce Ganhou Seu Saldo e De {dinheiro}')
+                  f'\nVoce Ganhou Seu Saldo e De {soma}')
 
         elif dado != numero:
-            dinheiro -= aposta
+            soma = dinheiro - aposta
             print('')
             print(f'Voce Escolheu {numero} e o Dado Deu {dado} '
-                  f'\nVoce Perdeu Seu Saldo e De {dinheiro}')
+                  f'\nVoce Perdeu Seu Saldo e De {soma}')
     saldop = dinheiro + aposta
     saldon = dinheiro - aposta
     while jogo == 1:
@@ -66,14 +66,12 @@ elif jogo == 1:
                 if numero >= 7 or numero <= 0:
                     print('Opção Invalida')
 
-                elif dado == numero:
-                    dinheiro += + aposta
-                    print('')
-                    print(f'Voce Escolheu {numero} e o Dado Deu {dado} '
-                          f'\nVoce Ganhou Seu Saldo e De {dinheiro}')
+if dado == numero:
+    dinheiro += + aposta
+    print('')
+    print(f'Voce Escolheu {numero} e o Dado Deu {dado} Voce Ganhou Seu Saldo e De {dinheiro}')
 
-                elif dado != numero:
-                    dinheiro -= aposta
-                    print('')
-                    print(f'Voce Escolheu {numero} e o Dado Deu {dado} '
-                          f'\nVoce Perdeu Seu Saldo e De {dinheiro}')
+elif dado != numero:
+    dinheiro += - aposta
+    print('')
+    print(f'Voce Escolheu {numero} e o Dado Deu {dado} Voce Perdeu Seu Saldo e De {dinheiro}')
