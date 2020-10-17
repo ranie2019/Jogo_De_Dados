@@ -18,7 +18,7 @@ if jogo == 0:
     print('Fim de Jogo')
 
 elif jogo >= 2:
-    print('Opção Ivalida')
+    print('Opção Invalida')
 
 elif jogo == 1:
     dinheiro = float(input('Digite o valor que Voce quer Depositar R$ '))
@@ -29,7 +29,7 @@ elif jogo == 1:
     elif dinheiro >= aposta:
         numero = int(input('Digite um Numero De 1 a 6: '))
         if numero >= 7 or numero <= 0:
-            print('Opção Ivalida')
+            print('Opção Invalida')
 
         elif dado == numero:
             soma = dinheiro + aposta
@@ -55,7 +55,7 @@ elif jogo == 1:
             print('Fim de Jogo')
 
         elif jogo >= 2:
-            print('Opção Ivalida')
+            print('Opção Invalida')
 
         elif jogo == 1:
             aposta = float(input('Digite o Valor que Voce Vai Apostar R$ '))
@@ -64,7 +64,7 @@ elif jogo == 1:
             elif dinheiro > aposta:
                 numero = int(input('Digite um Numero De 1 a 6: '))
                 if numero >= 7 or numero <= 0:
-                    print('Opção Ivalida')
+                    print('Opção Invalida')
 
                 elif dado == numero:
                     soma = dinheiro + aposta
