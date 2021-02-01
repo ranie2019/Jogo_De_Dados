@@ -51,6 +51,7 @@ elif jogo == 1:
 1 sim
 ''')
         jogo = int(input('Digite Sua Escolha: '))
+        dado = randint(1, 6)
         if jogo == 0:
             print('Fim de Jogo')
 
